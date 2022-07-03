@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>校园办公系统认证页面</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/bg_id.jpg) no-repeat;
+            background-size: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            width: 700px;
+            margin-top: 50px;
+            padding: 10px 0px;
+            color: white;
+            background-color: rgb(23, 61, 250);
+        }
+
+        form {
+            margin-top: 60px;
+        }
+
+        table {
+            border: 3px solid blue;
+        }
+
+        #td1 {
+            font-size: 20px;
+            color: rgb(75, 75, 223);
+        }
+
+        label {
+            color: red;
+            font-weight: bold;
+        }
+
+        input {
+            height: 24px;
+        }
+    </style>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+        function checknumber() {
+            var num = myform.number.value;
+            $("err_number").innerHTML = "";
+            if (num == "" || num == null) {
+                $("err_number").innerHTML = "卡号不能为空！";
+            } else if (num.length != 10) {
+                $("err_number").innerHTML = "卡号长度必须为10!";
+            } else {
+                var firstnum = num.charAt(0);
+                if (firstnum == "0") {
+                    $("err_number").innerHTML = "卡号首字母必须不为0!";
+                } else if (parseInt(num).toString().length != 10) {
+                    $("err_number").innerHTML = "卡号不全为数字！";
+                    alert("卡号不全为数字！");
+                }
+            }
+        }
+        function checkkey() {
+            var key = myform.key.value;
+            $("err_key").innerHTML = "";
+            if (key == "" || key == null) {
+                $("err_key").innerHTML = "口令不能为空！";
+            } else {
+                if (key.length < 8 || key.length > 15) {
+                    $("err_key").innerHTML = "口令长度不能小于8或大于15!";
+                }
+            }
+        }
+        function checkkey2() {
+				var key21 = myform.key2.value;
+				var key11 = myform.key.value;
+				$("err_key2").innerHTML = "";
+				if (key21 == "" || key21 == null) {
+					$("err_key2").innerHTML = "口令不能为空！";
+				} else if (key21.length < 8 || key21.length > 15) {
+					$("err_key2").innerHTML = "口令长度不能小于8或大于15！";
+				} else if (key21 != key11) {
+					$("err_key2").innerHTML = "口令与二次口令不相同！";
+				}
+			}
+        function checkqqwx(){
+            var qqwx=myform.qqwx.value;
+            $("err_qqwx").innerHTML="";
+            if(qqwx==""||qqwx==null){
+                $("err_qqwx").innerHTML="微信号不能为空！";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>校园办公系统认证页面</h2>
+    <form name="myform">
+        <table cellpadding="0">
+            <tr>
+                <td rowspan="5">
+                    <img src="images/sfyz_2.jpg" alt="">
+                </td>
+                <td id="td1">校园卡号：</td>
+                <td id="td2">
+                    <input type="text" name="number" id="" onblur="checknumber()" />
+                </td>
+                <td><label id="err_number"></label></td>
+            </tr>
+            <tr>
+                <td id="td1">口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;令：</td>
+                <td><input type="password" name="key" id="" onblur="checkkey()" /></td>
+                <td><label id="err_key"></label></td>
+            </tr>
+            <tr>
+                <td id="td1">二次口令：</td>
+                <td>
+					<input type="password" name="key2" onblur="checkkey2()" />
+				</td>
+                <td>
+					<label id="err_key2"></label>
+				</td>
+            </tr>
+            <tr>
+                <td id="td1">QQ/微信：</td>
+                <td><input type="text" name="qqwx" id="" onblur="checkqqwx()"></td>
+                <td><label id="err_qqwx"></label></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="" id="" value="提交">&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="" id="" value="重置">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>按钮与事件</title>
+    <script>
+        function queren() {
+            var btn = document.getElementById("btn");
+                var a = confirm("请选择是？否？");
+            if (a == true) {
+                btn.value="确认";
+            }
+            else {
+                btn.value="取消";
+                }
+            }
+    </script>
+</head>
+
+<body>
+    <input type="button" id="btn" value="单击我有确认框" onclick="queren()">
+</body>
+
+</html>

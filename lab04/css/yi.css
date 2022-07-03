@@ -1,0 +1,37 @@
+/* CSS Document */
+
+* {font-size: 16px;font-family: Times New Roman;margin: 0 auto;
+}
+body{width: 1000px;height: 900px;border: 1px solid #000000;}
+#contain{width: 1000px;height: 800px;background: #FFFFFF;
+}
+span{
+	color: red
+}
+#header {background: #DCDCDC;width: 1000px;height: 45px;
+}
+#logo {background: url("../images/logo1.png") no-repeat;float: left;
+}
+#select {width: 140px;height: 45px;float: right;
+}
+#nav {color: #324894;width: 1000px;height: 40px;background: #306ECD;font-weight: bold;
+}
+a:link,a:visited,a:active{text-decoration: none;color: #000000;
+}
+td{line-height: 40px;font-size: 18px;text-align: center;vertical-align: middle;
+}
+#picture{width: 1000px;height: 318px;background: url("../images/yiliao_big.jpg") no-repeat;
+}
+#main {width: 1000px;height:400px;
+}
+#left {width: 300px;height: 357px;float: left;background: #FFFFFF;margin: 2px;
+}
+#left-top {background: #DDE4E9;width: 300px;height: 142.8px;padding-top: 20px;
+}
+#left-bottom {background:#DDE4E9;width: 300px;height: 230px;margin-top: 3px;
+}
+#right{width: 660px;height: 400px;float: left;margin: 10px;
+}
+.div1{line-height: 1em;text-indent: 2em;color: #67F78；}
+#footer{width: 100%;height: 100px;text-align: center;}
+li{list-style: none;}

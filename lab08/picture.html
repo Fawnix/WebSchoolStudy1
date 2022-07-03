@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        body{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        #div1{
+            text-align:center;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            padding:10px  5px;
+            padding-top: 25px;
+        }
+        p{
+            text-align: center;
+        }
+        strong{
+            position: absolute;
+            top: 350px;
+            left: 488px;
+        }
+        #game{
+            position: absolute;
+            top: 352px;
+            left: 620px;
+        }
+    </style>
+    <script>function $(id){return document.getElementById(id);}
+    function changeImage(){
+          var index=$("game").selectedIndex;
+        $("show").src=$("game").options[index].value;
+    }
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <form action="">
+            <strong>列表框图像浏览器</strong>
+            <select id="game" onchange="changeImage()">
+                <option value="images/img1.jpg">选择图像</option>
+                <option value="images/img2.jpg">卡通图片2</option>
+                <option value="images/img3.jpg">卡通图片3</option>
+            </select>
+        </form>
+    </div>
+    <p>
+        <img src="images/img1.jpg" alt="" id="show">
+    </p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* CSS Document */
+*{
+	margin: 0 auto;
+	padding: 0px;
+}
+body{
+	width: 800px;
+}
+
+#head{
+	color: blue;
+	text-indent: 2em;
+	text-align: center;
+	font-size: 15px;
+	background: url("../images/OIP-C (1).jfif");
+}
+#main{
+	width: 793px;
+	height: 615px;
+	border: 4px solid #d3dde1;
+}
+#left{
+	float: left;
+	height: 616px;
+	width: 210px;
+	
+	background-color: #d3dde1;
+}
+#left-up{
+	padding-top: 15px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#left-down{
+	text-align: center;
+}
+
+#center{
+	float: left;
+	width: 400px;
+	height: 616px;
+/*	height: 600px;*/
+}
+#center-up p{
+	text-align: center;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 11px;
+}
+#center-down{
+	margin-top: 40px;
+	line-height: 1.5em;
+	text-align: left;
+	font-size: 13px;
+	padding: 3px;
+}
+#right{
+	float: right;
+	width: 160px;
+	height: 616px;
+	text-align: left;
+	padding-right: 10px;
+}
+#right p{
+	text-indent: 2em;
+	font-size: 13px;
+}
+#right-down{
+	margin-top:100px;
+	border:4px dotted #ba8585;
+}
+#footer{
+	clear: both;
+	text-align: center;
+	font-size: 11px;
+	margin-top: 10px;
+}

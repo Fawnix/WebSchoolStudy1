@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 300px;
+            height: 200px;
+            padding: 20px 10px;
+        }
+        #button{
+            margin: 10px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var button1=document.getElementById("button1");
+        button1.onclick=function(){
+            var zh=document.getElementById("zh").value;
+            var pwd=document.getElementById("pwd").value;
+            alert('用户名：'+zh+'\n'+'密码：'+pwd);
+        }
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend align="center">用户注册</legend><br>
+            <div>
+                <table>
+                    <tr>
+                        <td align="center">账号：</td>
+                        <td><input type="text" name="zh" id="zh"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">密码：</td>
+                        <td><input type="password" name="pwd" id="pwd"></td>
+                    </tr>
+                    <tr><td>用户类型：</td>
+                        <td><input type="radio" name="work" id="work">教师
+                            <input type="radio" name="work" id="work">学生
+                            <input type="radio" name="work" id="work">管理员
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="submit" id="button1" value="提交">
+                            <input type="reset" name="reset" id="button2" value="重置">
+                        </td>
+                    </tr>
+                </table>
+             
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>简易福彩投注程序</title>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    div{
+        width: 450px;
+        height: 260px;
+        border: 2px solid #ff3300;
+    }
+    td{
+        font-weight: bold;
+        font-size: 18px;
+    }
+</style>
+<script>
+    function myClick(idStr,fun){
+        var btn=document.getElementById(idStr);
+        btn.onclick=fun;
+    }
+    window.onload=function(){
+        var num1=document.getElementById("number1");
+        var num2=document.getElementById("number2");
+        var num3=document.getElementById("number3");
+        var btn=document.getElementById("btn");
+    }
+        btn.onclick=function(num){
+            var number=new Array();
+            var num=document.getElementById(num);
+            for(i=0;i<=7;i++){
+                tmp=Math.floor(Math.random()*30+1);
+                for(var j=0;j<=number.length-1;j++){
+                    if(tmp==number[j]){
+                        tmp=Math.floor(Math.random()*30+1);
+                        j=0;
+                    }
+                }
+                number[i]=tmp;
+            }
+            num.value=number.sort().join(" ")
+        }
+    
+</script>
+</head>
+
+<body>
+    <div id="div1">
+        <img src="images/ico_7l.gif" alt="" srcset=""><br><br>
+    <h2 align="center">简易福彩投注程序</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td>彩票号码</td>
+                <td><input type="text" name="number1" id="number1"></td>
+                <td><input type="button" id="btn" value="投注"></td>
+                <td rowspan="3"><input type="reset" name="清空" value="清空" style="height: 75px; background-color: aqua;border: 1px solid black;"></td>
+            </tr>
+            <tr>
+                <td>彩票号码</td>
+                <td><input type="text" name="number2" id="number2"></td>
+                <td><input type="button" id="btn" value="投注"></td>
+            </tr>
+            <tr>
+                <td>彩票号码</td>
+                <td><input type="text" name="number3" id="number3"></td>
+                <td><input type="button" id="btn" value="投注"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

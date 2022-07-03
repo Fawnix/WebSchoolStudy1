@@ -1,0 +1,66 @@
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 1080px;
+}
+a{
+	font-size: 18px;
+	font-weight: bold;
+}
+#head{
+	padding-top: 90px;
+	padding-left: 130px;
+}
+#head a{
+	margin-right: 40px;
+}
+ul{
+	list-style-type: none;
+}
+#nav{
+	margin-top: 20px;
+}
+#left{
+	float: left;
+	background-color: #f7f7f7;
+	padding-left: 75px;
+	padding-right: 30px;
+	line-height: 25px;
+	height: 370px;
+	padding-top: 20px;
+}
+#center{
+	float: left;
+	width: 734px;
+}
+hr{
+	height: 3px;
+	border: 0;
+	background-color: #a88dd9;
+}
+#right{
+	float: right;
+	background-color: #f7f7f7;
+	padding-left:85px;
+	line-height: 20px;
+	height:350px;
+	padding-top: 40px;
+}
+#right li{
+	padding-top: 12px;
+}
+#right h3{
+	position: absolute;
+	left: 905px;
+	top: 163px;
+}
+#footer{
+	text-align: center;
+	clear: both;
+	background-color: #AAAAAA;
+	padding-top: 20px;
+	height: 60px;
+}

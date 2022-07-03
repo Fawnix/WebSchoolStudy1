@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="icon" href="images/登录.svg" type="images/x-icon">
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/2.jpg) no-repeat;
+            background-size: 100% auto;
+        }
+        #login-box{
+            width: 30%;
+            height: 400px;
+            text-align: center;
+            background: #00000090;
+            margin: 0 auto;
+            margin-top: 15%;
+            padding: 20px 50px;
+            border-radius: 10px;
+        }
+        #login-box:hover{
+            box-shadow:0 0 5px 5px rgb(227, 106, 106);
+        }
+
+        form {
+            margin-top: 60px;
+        }
+        table{
+            height: 130px;
+        }
+        label {
+            color: red;
+            font-weight: bold;
+        }
+
+        input {
+            height: 24px;
+        }
+        button {
+            margin-top: 10px;
+            width: 140px;
+            height: 40px;
+            font-size: 20px;
+            color: #fff;
+            background-image: linear-gradient(to right,#aee6ff , #9a67ff );
+            border-radius: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+        function checknumber() {
+            var num = myform.number.value;
+            $("err_number").innerHTML = "";
+            if (num == "" || num == null) {
+                $("err_number").innerHTML = "账户不能为空！";
+            }
+        }
+        function checkkey() {
+            var key = myform.key.value;
+            $("err_key").innerHTML = "";
+            if (key == "" || key == null) {
+                $("err_key").innerHTML = "密码不能为空！";
+            } else {
+                if (key.length < 8 || key.length > 15) {
+                    $("err_key").innerHTML = "密码长度不能小于8或大于15!";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="login-box">
+    <h1 style="color: #fff;margin-top: 15px;">登录</h1>
+    <form name="myform">
+        <table cellpadding="0">
+            <tr>
+                <td>
+                    <img src="images/用户名.svg" alt="">
+                </td>
+                <td id="td2">
+                    <input type="text" name="number" id="" placeholder="请输入邮箱/手机号" onblur="checknumber()" />
+                </td>
+                <td><label id="err_number"></label></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/密码.svg" alt="">
+                </td>
+                <td><input type="password" name="key" placeholder="请输入密码" id="" onblur="checkkey()" /></td>
+                <td><label id="err_key"></label></td>
+            </tr>
+            
+        </table>
+        <a href="#"><button type="button">登录</button></a>
+    </form>
+</div>
+</body>
+
+</html>

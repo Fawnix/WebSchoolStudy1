@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script type="text/javascript">
+		document.write("<h1>找出1000-9999之间能够被17和13同时整除的整数的个数及累加和</h1>");
+		document.write("区间中符合条件的数有(输出格式：10个1行):<br>");
+		var count=0,sum=0,j=0;
+		for(var i=1000;i<10000;i++){
+			if(i%17==0&&i%13==0){
+				document.write(i+"&nbsp;&nbsp;&nbsp;");
+				count++;
+				if(count%10==0){
+					document.write("<br>");
+				}
+				
+				sum=sum+i;
+			}
+		}
+		document.write("<br>");
+		document.write("区间中符合条件的数共有"+count+"个");
+		document.write("<br>");
+		document.write("区间中符合条件的数的累加和为"+sum);
+		
+	</script>
+</head>
+
+<body>
+</body>
+</html>

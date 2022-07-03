@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    <form>
+    <input type="number" id="num1" step="1" onchange="add(document.getElementById('num1').value,document.getElementById('num2').value)" >&nbsp;+&nbsp;
+    <input type="number" id="num2" step="1" onchange="add(document.getElementById('num1').value,document.getElementById('num2').value)">&nbsp;=&nbsp;
+    <a id="demo"></ a>
+    <script>
+        var num1=parseInt(document.getElementById('num1').value);
+        var num2=parseInt(document.getElementById('num2').value);
+        var sum=parseInt(num1)+parseInt(num2);
+        function add(num1,num2){
+            var sum=parseInt(num1)+parseInt(num2);
+            document.getElementById("demo").innerHTML=sum;
+            if(isNaN(sum)==1){
+                document.getElementById("demo").innerHTML="空";
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>检查学号的合法性</title>
+    <script language="JavaScript">
+        function check() {
+            var num = document.getElementById("number").value;
+            if (!/^\d+$/.test(num)) {
+                alert("学号必须为数字字符，请重输入！");
+            } else if (num.length < 10) {
+                alert("学号长度不足10位，请重输入！");
+            } else {
+                alert("学号输入正确！");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>检查学号的合法性</h2><br>
+    输入学号：<input type="text" name="number" id="number">
+    <input type="button" value="合法性检查" onclick="check()">
+    </form>
+</body>
+
+</html>

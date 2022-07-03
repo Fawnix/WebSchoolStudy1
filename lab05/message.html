@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			font-size: 20px;
+			margin: 0 auto;
+		}
+		body{
+			border: 20px solid #EBEBEB;
+			width: 1200px;
+			height: 730px;
+			margin-top: 30px;
+			padding-top: 20px;
+		}
+		table{
+			width: 800px;
+			height: 600px;
+/*
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+*/
+		}
+		#i1{
+			border-left:150px solid #f0fcff;
+			border-right:150px solid #f0fcff;
+			border-bottom:30px solid #f0fcff;
+			padding: 3px;
+			width: 800px;
+			height: 630px;
+		}
+		tr{
+			height: 50px;
+			background-color: #f0fcff;
+		}
+		td{
+			width: 160px;
+		}
+		.c1{
+			color: #169314;
+			font-weight: bolder;
+			text-align: center;
+		}
+		.c2{
+			color: red;
+			font-weight: 580;
+		}
+		.c3{
+			color: red;
+			font-weight: bolder;
+		}
+		.c4{
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="background-color: #f0fcff; width: 1110px">
+		<span style="color: #0565dd;font-weight: bold;font-size: 35px;">留言板</span>
+		<span style="color: #0565dd;font-weight: bold;position: absolute;left: 1050px;top: 80px;">科技工作者建言</span>
+	</div>
+	<hr color="#FFFFFF" size="5" width="1110">
+	<div id="i1">
+		<h3 style="color: red;background-color: #f0fcff;font-weight:normal;height: 20px;margin: 0px;padding: 5px 0px;">发表留言</h3>
+		<table width="600px" cellpadding="0" cellspacing="4">
+
+			<tr>
+				<td class="c1"><h4>姓名：</h4></td>
+				<td><input name="name" type="text" size="13"></td>
+			</tr>
+			<tr>
+				<td class="c1"><h4>电子邮件：</h4></td>
+				<td><input name="email" type="email" size="42"></td>
+			</tr>
+			<tr>
+				<td class="c1">分类：</td>
+				<td class="c3">科技工作者建言&nbsp; <input name="check" type="radio">不保密&nbsp;<input name="check" type="radio">保密
+					&nbsp;&nbsp;&nbsp;留言类型：
+				<select>
+					<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td class="c1">留言：</td>
+				<td><textarea rows="8" cols="44"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="c4">注：如果您的留言不便公开，请选择"保密"选项，提交后可凭系统反馈给您的留言编号、查询密码和您的姓名查询回复。</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input name="submit" type="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="reset" type="reset" value="清空"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="c4">
+					<ul>
+						<li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+						<li>本网站拥有管理笔名和留言的一切权利。</li>
+					</ul>
+				</td>
+			</tr>
+
+			</table>
+		<hr color="#FFFFFF" size="5">
+		</div>
+</body>
+</html>

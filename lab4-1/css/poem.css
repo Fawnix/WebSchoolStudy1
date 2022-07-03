@@ -1,0 +1,84 @@
+/* CSS Document */
+*{
+	margin: 0 auto;
+	padding: 0px;
+}
+#contain{
+	height: 160px;
+}
+body{
+	width: 800px;
+}
+#contain img{
+	background: no-repeat;
+	opacity: 0.2;
+	width: 801px;
+	height: 160px;
+
+}
+#head{
+	color: blue;
+	text-align: center;
+	font-size: 15px;
+	    position: absolute;
+    left: 249px;
+    top: 20px;
+    width: 793px;
+/*	background: url("../images/图片1.png");*/
+}
+#main{
+	width: 793px;
+	height: 615px;
+	border: 4px solid #ffbac9;
+}
+#left{
+	float: left;
+	height: 616px;
+	width: 210px;
+	background-color: #ffbac9;
+}
+#left-up{
+	padding-top: 10px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#left-down{
+	text-align: center;
+}
+#center{
+	float: left;
+	width: 400px;
+}
+#center-up p{
+	text-align: center;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 13px;
+}
+#center-down{
+	margin-top: 40px;
+	line-height: 1.5em;
+	text-align: left;
+	font-size: 13px;
+}
+#right{
+	float: right;
+	width: 160px;
+	height: 628px;
+	padding-right: 10px;
+	text-align: left;
+}
+#right p{
+	text-indent: 2em;
+	font-size: 13px;
+}
+#right-down{
+	margin-top: 200px;
+	border:4px dotted #ba8585;
+}
+#footer{
+	clear: both;
+	text-align: center;
+	font-size: 11px;
+	margin-top: 15px;
+}

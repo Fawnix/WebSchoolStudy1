@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>按钮与事件</title>
+	<style>
+		body{
+			margin-top: 30px;;
+		}
+	</style>
+    <script>
+        function suggest(){
+            var mysuggest=prompt("请输入你的意见","我没有意见!");
+            alert("你输入的意见是:" + mysuggest);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="alert('我是弹出框！');">单击我有弹出框</button><br><br>
+    <input type="button" value="单击我有输入框" onclick="suggest()">
+</body>
+
+</html>

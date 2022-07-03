@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+			background-color: #00cc99;
+			text-align: center;
+			}
+
+    </style>
+    <script>
+        function $(id){return document.getElementById(id);}
+        function mouseOut(){
+            $('div1').style.background="#00cc99";
+            $('b1').src="images/image21.jpg";
+        }
+        function mouseOver(){
+            $('div1').style.background="#99cc66";
+            $('b1').src="images/image22.jpg";
+        }
+        function mousedown(){
+            form1.text1.value="按下鼠标";
+        }
+        function mclick(){
+			form1.text1.value="单击鼠标";
+			$('div1').style.background= "#99cc66";
+			$('b1').src= "images/image23.jpg";
+		}
+		function dbclick(){
+            form1.text1.value="双击鼠标";
+            $('div1').style.background="#aaccff";
+            $('b1').src="images/image24.jpg";
+        }
+
+    </script>
+</head>
+<body>
+    <div id="div1"  onmouseout="mouseOut();" onmouseover="mouseOver();" onmousedown="mousedown();" onclick="mclick();" ondblclick="dbclick();">
+      <h2>鼠标动作捕获与响应</h2>
+      <hr size="1" color="white">
+      <form action="" name="form1">
+          <input type="text" name="text1" id="text1">
+      </form>
+      <p>
+          <img src="images/image21.jpg" alt="鼠标移出" id="b1">
+      </p>  
+    </div>
+</body>
+</html>

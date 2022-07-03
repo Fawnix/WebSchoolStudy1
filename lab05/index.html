@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	body form table{
+		width: 600px;
+		height: 300px;
+		border: #6FC5DB medium groove;
+		text-align: center;
+		vertical-align: middle;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+</style>
+</head>
+
+<body>
+	<form method="post" enctype="text/plain">
+	<table border="1" cellpadding="opx" cellspacing="0px">
+		<tr>
+			<td colspan="2">姓名：<input type="text" size="10"> </td>
+			<td colspan="2">密码：<input type="password"></td>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				留言：<br>
+			<textarea rows="10" cols="10"></textarea>
+			</td>
+			<td>年龄:</td>
+			<td><input name="age" type="number" max="120" min="0" step="2"></td>
+			<td rowspan="3">
+				爱好:
+				<select name="hobby" >
+					<option value="打游戏">打游戏</option>
+					<option value="看小说">看小说</option>
+					<option value="看书" selected>看书</option>
+					<option value="听音乐">听音乐</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>生日：</td>
+			<td><input name="birth" type="date"></td>
+		</tr>
+		<tr>
+			<td>邮箱：</td>
+			<td><input name="email" type="email"></td>
+		</tr>
+		<tr>
+			<td><input name="reset" type="reset" value="重置"></td>
+			<td colspan="2">
+				昵称：
+				<input name="id" type="text" size="10">
+			</td>
+			<td><input name="submit" type="submit" value="提交"></td>
+		</tr>
+	</table>
+	
+	</form>
+</body>
+</html>

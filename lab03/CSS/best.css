@@ -1,0 +1,34 @@
+/* CSS Document */
+body{
+	width: 690px;
+	height: 570px;
+	border: #08ADEB medium solid;
+	margin: 0 auto;
+	padding-top: 20px;
+	margin-top: 5px;
+	padding-right: 20px;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+li{
+	list-style-type: none;
+	display: inline;
+	float: left;
+	padding: 8px;
+}
+img{
+	border-width: 10px;
+	border-color: #882FB5;
+	border-style: groove;
+}
+a:hover{
+	border: 1px dashed #9999cc;
+}
+table{
+	margin-left: 10px;
+}
+td{
+	padding: 5px;
+}
